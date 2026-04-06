@@ -2,9 +2,10 @@ Web aplikacija za upravljanje kandidatima i njihovim veštinama.
 Aplikacija omogućava dodavanje, izmenu, brisanje i pretragu kandidata, kao i rad sa njihovim veštinama.
 
 
-## Struktura projekta
+### Struktura projekta
 
- `praksaProjekat` – backend (Spring Boot, IntelliJ okruženje)
+
+## `praksaProjekat` – backend (Spring Boot, IntelliJ okruženje)
 
  Podesiti `application.properties`:
 
@@ -18,21 +19,22 @@ server.port=8080
 ```
 
 
-`praksaprojekatfront` – frontend (React)
+
+## `praksaprojekatfront` – frontend (React)
 Pokretanje aplikacije: npm install, npm run dev
 
 
-`database/praksa.sql` – skripta za bazu
+## `database/praksa.sql` – skripta za bazu
 U MySQL Workbench-u kreirati bazu i importovati fajl:
 ```text
 database/praksa.sql
 ```
 
 
-##  Testovi: JUnit, Mockito, MockMvc
+ Testovi: JUnit, Mockito, MockMvc
 
 
-## Dokumentacija: 
+Dokumentacija: 
 Swagger (OpenAPI) je dostupan na:
 ```text
 http://localhost:8080/swagger-ui/index.html
