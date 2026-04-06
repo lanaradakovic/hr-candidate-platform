@@ -1,15 +1,6 @@
-# HR Platform
-
 Web aplikacija za upravljanje kandidatima i njihovim veštinama.  
 Aplikacija omogućava dodavanje, izmenu, brisanje i pretragu kandidata, kao i rad sa njihovim veštinama.
 
-## Tehnologije
-
-- Backend: Java, Spring Boot, Spring Data JPA
-- Baza podataka: MySQL
-- Testovi: JUnit, Mockito, MockMvc
-- Frontend: React (Vite)
-- Dokumentacija: Swagger (OpenAPI)
 
 ## Struktura projekta
 
@@ -17,14 +8,15 @@ Aplikacija omogućava dodavanje, izmenu, brisanje i pretragu kandidata, kao i ra
 - `praksaprojekatfront` – frontend (React)
 - `database/praksa.sql` – skripta za bazu
 
-### Baza podataka
+## Baza podataka
+U MySQL Workbench-u kreirati bazu i importovati fajl:
+```text
+database/praksa.sql
+```
 
-1. Otvoriti MySQL Workbench  
-2. Importovati fajl `database/praksa.sql`
 
-### Backend
-
-Otvoriti projekat u IntelliJ okruženju  
+### Backend 
+Java, Spring Boot, Spring Data JPA (IntelliJ okruženje)
 
 Podesiti `application.properties`:
 
@@ -37,39 +29,25 @@ spring.jpa.show-sql=true
 server.port=8080
 ```
 
-
 ## Frontend
-Otvoriti terminal u folderu:
+Frontend je implementiran u React-u (Vite).
+Pokretanje aplikacije: npm install, npm run dev
+
+##  Testovi: JUnit, Mockito, MockMvc
+
+## Dokumentacija: 
+Swagger (OpenAPI) je dostupan na:
 ```text
-praksaprojekatfront
-```
-
-
-Pokrenuti komande:
-```bash
-npm install
-npm run dev
-```
-
-
-## API
-
-Swagger dokumentacija je dostupna na:
-```
 http://localhost:8080/swagger-ui/index.html
 ```
 
-
-
 ## Najzahtevniji / Najzanimljiviji deo
 
-Najzahtevniji deo implementacije za mene bio je rad sa React frontendom i pisanje testova, jer se ranije nisam 
-susretala sa tim tehnologijama.
-Prilikom izrade frontend-a, bilo mi je izazovno da povežem React aplikaciju sa backend servisima i pravilno 
-upravljam podacima koji dolaze sa servera. Kroz rad sam koristila različite online resurse i tutorijale kako
-bih razumela osnovne koncepte React-a i način rada sa HTTP zahtevima.
+Najzahtevniji deo implementacije za mene bio je rad sa React frontendom i pisanje testova, jer se ranije nisam susretala sa tim tehnologijama.
 
-Pisanje testova mi je takođe predstavljalo izazov, jer sam prvi put radila sa JUnit-om i Mockito bibliotekom.
-Bilo je potrebno da razumem kako da testiram servisni sloj izolovano, kao i kako da simuliram ponašanje
-baze podataka. Kroz ovaj proces sam stekla bolje razumevanje testiranja i njegove važnosti u razvoju aplikacija.
+Tokom rada na frontend delu koristila sam različite online resurse i tutorijale kako bih savladala osnovne koncepte React-a i način rada sa HTTP zahtevima.
+
+Pisanje testova mi je takođe predstavljalo izazov, jer sam prvi put radila sa JUnit-om i Mockito bibliotekom. Bilo je potrebno da razumem kako da testiram servisni sloj izolovano, kao i kako da simuliram ponašanje baze podataka. Kroz ovaj proces sam stekla bolje razumevanje testiranja i njegove važnosti u razvoju aplikacija.
+
+Najzanimljiviji deo projekta za mene bio je backend, gde sam radila sa Spring Boot-om, bazom podataka i implementacijom poslovne logike.
 
