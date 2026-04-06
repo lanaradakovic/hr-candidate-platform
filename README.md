@@ -1,3 +1,66 @@
+# HR Platform
+
+Web aplikacija za upravljanje kandidatima i njihovim veštinama.  
+Aplikacija omogućava dodavanje, izmenu, brisanje i pretragu kandidata, kao i rad sa njihovim veštinama.
+
+## Tehnologije
+
+- Backend: Java, Spring Boot, Spring Data JPA
+- Baza podataka: MySQL
+- Testovi: JUnit, Mockito, MockMvc
+- Frontend: React (Vite)
+- Dokumentacija: Swagger (OpenAPI)
+
+## Struktura projekta
+
+- `praksaProjekat` – backend (Spring Boot)
+- `praksaprojekatfront` – frontend (React)
+- `database/praksa.sql` – skripta za bazu
+
+### Baza podataka
+
+1. Otvoriti MySQL Workbench  
+2. Importovati fajl `database/praksa.sql`
+
+### Backend
+
+Otvoriti projekat u IntelliJ okruženju  
+
+Podesiti `application.properties`:
+
+```properties
+spring.datasource.url=jdbc:mysql://localhost:3306/praksa
+spring.datasource.username=root
+spring.datasource.password=your_password
+spring.jpa.hibernate.ddl-auto=none
+spring.jpa.show-sql=true
+server.port=8080
+```
+
+
+## Frontend
+Otvoriti terminal u folderu:
+```text
+praksaprojekatfront
+```
+
+
+Pokrenuti komande:
+```bash
+npm install
+npm run dev
+```
+
+
+## API
+
+Swagger dokumentacija je dostupna na:
+```
+http://localhost:8080/swagger-ui/index.html
+```
+
+
+
 ## Najzahtevniji / Najzanimljiviji deo
 
 Najzahtevniji deo implementacije za mene bio je rad sa React frontendom i pisanje testova, jer se ranije nisam 
