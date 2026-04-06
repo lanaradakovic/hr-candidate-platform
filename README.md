@@ -20,8 +20,15 @@ server.port=8080
 
 
 
+
+
 ## `praksaprojekatfront` – frontend (React)
 Pokretanje aplikacije: npm install, npm run dev
+
+
+
+
+
 
 
 ## `database/praksa.sql` – skripta za bazu
@@ -31,10 +38,13 @@ database/praksa.sql
 ```
 
 
- Testovi: JUnit, Mockito, MockMvc
+## Testovi: JUnit, Mockito, MockMvc
 
 
-Dokumentacija: 
+
+
+
+## Dokumentacija: 
 Swagger (OpenAPI) je dostupan na:
 ```text
 http://localhost:8080/swagger-ui/index.html
