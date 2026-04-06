@@ -4,21 +4,9 @@ Aplikacija omogućava dodavanje, izmenu, brisanje i pretragu kandidata, kao i ra
 
 ## Struktura projekta
 
-- `praksaProjekat` – backend (Spring Boot)
-- `praksaprojekatfront` – frontend (React)
-- `database/praksa.sql` – skripta za bazu
+ `praksaProjekat` – backend (Spring Boot, IntelliJ okruženje)
 
-## Baza podataka
-U MySQL Workbench-u kreirati bazu i importovati fajl:
-```text
-database/praksa.sql
-```
-
-
-### Backend 
-Java, Spring Boot, Spring Data JPA (IntelliJ okruženje)
-
-Podesiti `application.properties`:
+ Podesiti `application.properties`:
 
 ```properties
 spring.datasource.url=jdbc:mysql://localhost:3306/praksa
@@ -29,17 +17,29 @@ spring.jpa.show-sql=true
 server.port=8080
 ```
 
-## Frontend
-Frontend je implementiran u React-u (Vite).
+
+`praksaprojekatfront` – frontend (React)
 Pokretanje aplikacije: npm install, npm run dev
 
+
+`database/praksa.sql` – skripta za bazu
+U MySQL Workbench-u kreirati bazu i importovati fajl:
+```text
+database/praksa.sql
+```
+
+
 ##  Testovi: JUnit, Mockito, MockMvc
+
 
 ## Dokumentacija: 
 Swagger (OpenAPI) je dostupan na:
 ```text
 http://localhost:8080/swagger-ui/index.html
 ```
+
+
+
 
 ## Najzahtevniji / Najzanimljiviji deo
 
